@@ -10,15 +10,13 @@ public class DemoApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext contex = SpringApplication.run(DemoApplication.class, args);
-		PaymentGateway paymentGateway = contex.getBean(PaymentGateway.class);
+//		PaymentGateway paymentGateway = contex.getBean(PaymentGateway.class);
 //		 paymentGateway.setType("RazorPay ");
 //		 paymentGateway.setRetryCount(5 );
 
 		System.out.println("Hello World!");
-		System.out.println(paymentGateway.getType());
-		System.out.println(paymentGateway.getRetryCount());
-		System.out.println(paymentGateway.isEnabled());
-		System.out.println(paymentGateway.getTimeout());
+//		paymentGateway.print();
+
 	}
 
 }
